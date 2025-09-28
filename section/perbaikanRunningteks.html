@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perbaikan Running Text – Jabar Alam</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .project-hero {
+      padding: 5rem 0 3rem;
+      text-align: center;
+    }
+    .project-hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+    .project-hero p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      transition: opacity 0.2s;
+    }
+    .back-btn:hover {
+      opacity: 0.85;
+    }
+.project-image {
+  max-width: 720px;     /* Batas maksimal lebar */
+  width: 100%;          /* Responsif di mobile */
+  height: auto;         /* Jaga rasio aspek */
+  border-radius: 16px;
+  margin: 2rem auto;    /* Center + jarak atas-bawah */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+    .project-image:hover {
+      transform: scale(1.02);
+    }
+    .section-detail {
+      padding: 3rem 0;
+    }
+    .section-detail h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .section-detail h2::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: var(--primary);
+      margin-top: 0.5rem;
+    }
+    .section-detail p, .section-detail ul {
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .skills li {
+      background: rgba(67, 97, 238, 0.1);
+      color: var(--primary);
+      padding: 0.5rem 1.1rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      .project-hero h1 {
+        font-size: 2rem;
+      }
+      .project-hero p.subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <!-- Theme toggle (konsisten dengan portofolio utama) -->
+  <button id="theme-toggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>Perbaikan Running Text</h1>
+      <p class="subtitle">Restorasi & Peningkatan Sistem Display LED Berbasis Mikrokontroler</p>
+      <img src="/img/prrt.jpeg" alt="Running Text yang Telah Diperbaiki" class="project-image">
+    </div>
+  </section>
+
+  <section class="section-detail">
+    <div class="container">
+      <h2>🔍 Diagnosa & Perbaikan</h2>
+      <p>
+        Sistem running text mengalami gangguan berupa blank screen, teks terpotong, atau tidak responsif terhadap input. 
+        Setelah analisis, ditemukan kerusakan pada modul power supply dan firmware yang korup.
+      </p>
+
+      <h2>🛠️ Solusi yang Diterapkan</h2>
+      <ul class="skills">
+        <li>Reparasi catu daya 5V dengan kapasitor filter baru</li>
+        <li>Penggantian IC driver LED yang rusak</li>
+        <li>Upload ulang firmware berbasis Arduino</li>
+        <li>Penambahan fitur kontrol via Bluetooth HC-05</li>
+        <li>Optimasi konsumsi daya hingga 30%</li>
+      </ul>
+
+      <h2>⚙️ Teknologi</h2>
+      <ul class="skills">
+        <li>ATmega328P / ESP32</li>
+        <li>Arduino IDE</li>
+        <li>C++ (Embedded)</li>
+        <li>PCB Prototyping</li>
+        <li>MD_Parola Library</li>
+      </ul>
+
+      <h2>✨ Hasil Akhir</h2>
+      <p>
+        Running text kini beroperasi 24/7 tanpa gangguan, teks dapat diupdate dari smartphone, 
+        dan tampil lebih terang dengan efek scroll yang halus. Proyek ini menghemat biaya klien hingga 70% dibanding beli unit baru.
+      </p>
+    </div>
+  </section>
+
+<!-- Modern Back Button -->
+<div class="back-to-portfolio">
+  <a href="/index.html" class="btn-back">
+    <i class="fas fa-arrow-left"></i>
+    <span>Kembali ke Portofolio</span>
+  </a>
+</div>
+  
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jabar Alam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Otomatisasi Industri – Jabar Alam</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .project-hero {
+      padding: 5rem 0 3rem;
+      text-align: center;
+    }
+    .project-hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+    .project-hero p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      transition: opacity 0.2s;
+    }
+    .back-btn:hover {
+      opacity: 0.85;
+    }
+    .project-image {
+      max-width: 720px;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin: 2rem auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+    .project-image:hover {
+      transform: scale(1.02);
+    }
+    .section-detail {
+      padding: 3rem 0;
+    }
+    .section-detail h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .section-detail h2::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: var(--primary);
+      margin-top: 0.5rem;
+    }
+    .section-detail p, .section-detail ul {
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .skills li {
+      background: rgba(67, 97, 238, 0.1);
+      color: var(--primary);
+      padding: 0.5rem 1.1rem;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      .project-hero h1 {
+        font-size: 2rem;
+      }
+      .project-hero p.subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <button id="theme-toggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>Otomatisasi Industri</h1>
+      <p class="subtitle">Sistem Kontrol Berbasis IoT dan PLC untuk Efisiensi Produksi</p>
+      <img src="/img/plc.jpg" alt="Sistem Otomatisasi Industri" class="project-image">
+    </div>
+  </section>
+
+  <section class="section-detail">
+    <div class="container">
+      <h2>🔍 Latar Belakang</h2>
+      <p>
+        Industri manufaktur di Surabaya membutuhkan sistem otomatisasi untuk menggantikan proses manual yang lambat dan rentan kesalahan. 
+        Proyek ini menggabungkan kekuatan <strong>PLC (Programmable Logic Controller)</strong> dan <strong>IoT</strong> untuk monitoring real-time.
+      </p>
+
+      <h2>🛠️ Implementasi</h2>
+      <ul class="skills">
+        <li>Desain sistem kontrol berbasis PLC Siemens S7-1200</li>
+        <li>Integrasi sensor suhu, level, dan proximity</li>
+        <li>Komunikasi PLC ke cloud via Node-RED & MQTT</li>
+        <li>Dashboard monitoring berbasis web (React + Chart.js)</li>
+        <li>Notifikasi via Telegram saat terjadi anomaly</li>
+      </ul>
+
+      <h2>⚙️ Teknologi</h2>
+      <ul class="skills">
+        <li>PLC (Ladder Logic)</li>
+        <li>ESP32 / Raspberry Pi</li>
+        <li>MQTT, Node-RED</li>
+        <li>React.js, Chart.js</li>
+        <li>Cloud: Ubidots / ThingsBoard</li>
+      </ul>
+
+      <h2>✨ Hasil</h2>
+      <p>
+        Proses produksi menjadi 40% lebih cepat, downtime berkurang signifikan, dan operator dapat memantau kondisi mesin dari mana saja. 
+        Sistem ini juga menjadi fondasi untuk transformasi digital di pabrik tersebut.
+      </p>
+    </div>
+  </section>
+
+<!-- Modern Back Button -->
+<div class="back-to-portfolio">
+  <a href="/index.html" class="btn-back">
+    <i class="fas fa-arrow-left"></i>
+    <span>Kembali ke Portofolio</span>
+  </a>
+</div>
+  
+
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jabar Alam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
