@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instalasi & Otomatisasi PLC – Jabar Alam</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Sama seperti di atas */
+    .project-hero { padding: 5rem 0 3rem; text-align: center; }
+    .project-hero h1 {
+      font-size: 2.4rem; margin-bottom: 0.8rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700;
+    }
+    .project-hero p.subtitle { font-size: 1.1rem; opacity: 0.85; max-width: 600px; margin: 0 auto 2rem; }
+    .project-image {
+      max-width: 720px; width: 100%; height: auto; border-radius: 16px;
+      margin: 2rem auto; box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+    .project-image:hover { transform: scale(1.02); }
+    .section-detail { padding: 3rem 0; }
+    .section-detail h2 { font-size: 1.8rem; margin-bottom: 1.5rem; position: relative; }
+    .section-detail h2::after {
+      content: ''; display: block; width: 40px; height: 3px;
+      background: var(--primary); margin-top: 0.5rem;
+    }
+    .skills {
+      display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem;
+    }
+    .skills li {
+      background: rgba(67, 97, 238, 0.1); color: var(--primary);
+      padding: 0.5rem 1.1rem; border-radius: 50px;
+      font-size: 0.95rem; font-weight: 500;
+    }
+    .back-to-portfolio { text-align: center; padding: 2rem 0 1rem; }
+    .btn-back {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: rgba(67, 97, 238, 0.1); color: var(--primary);
+      padding: 0.7rem 1.6rem; border-radius: 50px; text-decoration: none;
+      font-weight: 600; font-size: 1rem; transition: all 0.3s ease;
+      border: 1px solid rgba(67, 97, 238, 0.2);
+    }
+    .btn-back:hover {
+      background: rgba(67, 97, 238, 0.15); transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+    }
+    .cta-section { text-align: center; padding: 2rem 0; }
+  </style>
+</head>
+<body class="light-mode">
+  <button id="theme-toggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>Instalasi & Otomatisasi PLC</h1>
+      <p class="subtitle">Integrasi Sistem Kontrol Industri Berbasis PLC dan IoT</p>
+      <img src="img/plc2.jpg" alt="Instalasi PLC" class="project-image">
+    </div>
+  </section>
+
+  <section class="section-detail">
+    <div class="container">
+      <h2>🏭 Lingkup Pekerjaan</h2>
+      <p>
+        Instalasi fisik PLC, wiring sensor/aktuator, pemrograman ladder logic, 
+        hingga integrasi dengan sistem monitoring berbasis cloud.
+      </p>
+
+      <h2>🛠️ Fitur Sistem</h2>
+      <ul class="skills">
+        <li>Kontrol motor & conveyor</li>
+        <li>Monitoring suhu & tekanan real-time</li>
+        <li>Notifikasi gangguan via WhatsApp</li>
+        <li>Antarmuka HMI sederhana</li>
+        <li>Cadangan daya & proteksi lonjakan</li>
+      </ul>
+
+      <h2>⚙️ Teknologi</h2>
+      <ul class="skills">
+        <li>PLC Siemens / Mitsubishi</li>
+        <li>Ladder Logic (TIA Portal)</li>
+        <li>Node-RED, MQTT</li>
+        <li>ESP32 sebagai gateway IoT</li>
+        <li>Dashboard: Grafana / Custom Web</li>
+      </ul>
+
+      <h2>✨ Hasil</h2>
+      <p>
+        Sistem otomatis yang andal, mudah dipantau, dan mengurangi ketergantungan pada operator manual. 
+        Efisiensi produksi meningkat hingga 35%.
+      </p>
+    </div>
+  </section>
+
+  <div class="back-to-portfolio">
+    <a href="../index.html" class="btn-back">
+      <i class="fas fa-arrow-left"></i>
+      <span>Kembali ke Portofolio</span>
+    </a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jabar Alam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
